@@ -1,0 +1,81 @@
+#area-dados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#caixa-text-area textarea{
+    height: 60vh;
+    width: 60vw;
+    line-height: 25px;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+
+/* --------------------Responsividade Tablet-------------------------------------- */
+@media screen and (max-width:768px) {
+
+    
+    #topo h2 {
+        font-size: 2em;
+        top: 0;
+        
+    }
+    #topo button {
+        height: 30px;
+    }
+
+    hr{
+        top: 1.1em;
+        margin-bottom: 0;
+
+    }
+    #topo{
+        height: 3em;
+        top: 10px;
+    }
+
+
+
+
+    #caixa-text-area textarea{
+        height: 60vh;
+        width: 80vw;
+    }
+
+
+
+}
+
+/* -------------------Responsividade Celular------------------------------------------- */
+
+@media screen and (max-width:650px) {
+
+  
+    #topo h2 {
+        font-size: 1.7em;
+        left: 1em;
+    }
+    #topo a {
+        width: 68px;
+        font-size: 12px;
+    }
+
+
+    hr{
+        top: 2.5em;
+        margin-bottom: 0px;
+    }
+
+    #caixa-text-area textarea{
+        height: 65vh;
+        width: 80vw;
+    }
+
+
+
+}

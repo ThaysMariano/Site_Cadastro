@@ -1,0 +1,26 @@
+{
+    "users": [
+        {
+            "nomeCompleto": "Thays da Silva Mariano",
+            "nomeUsuario": "TMariano",
+            "email": "thaysmariano@gmail.com",
+            "telefone": "9013840237",
+            "planoSelecionado": "Lendário"
+        },
+
+        {
+            "nomeCompleto": "Nathália Hebbel",
+            "nomeUsuario": "NathHebbel",
+            "email": "nathHebbel@gmail.com",
+            "telefone": "9230980232",
+            "planoSelecionado": "Explorador"
+        },
+        {
+            "nomeCompleto": "Joaozinho",
+            "nomeUsuario": "joaoPlays",
+            "email": "joaoPlays0712@gmail.com",
+            "telefone": "028409232",
+            "planoSelecionado": "Aventureiro"
+        }
+    ]
+}

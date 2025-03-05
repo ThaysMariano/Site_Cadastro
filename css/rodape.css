@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    height: 30vh;
+    background: linear-gradient(180deg, rgba(9,1,38,1) 30%, rgba(0,0,0,1) 75%); 
+    color: white;
+}
+
+#texto-rodape {
+    padding-top: 5vh;
+}
+
+footer svg {
+    height: 50px;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+#direitos {
+    font-size: 14px;
+    margin-bottom: 1.5em;
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+
+footer {
+    height: 30vw;
+}
+
+}

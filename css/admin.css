@@ -1,0 +1,266 @@
+:root {
+    --Roxo_intenso: #591f94;
+    --Roxo_suave: #934ecc;
+    --Roxo_escuro: #29192e;
+    --Quase_preto: #030303;
+
+    --rosa: #f079f2;
+    --roxoEscuro: #7326bf;
+    --roxo: #9538f2;
+    --roxoTransparencia: #9538f27e;
+    --preto: #090126;
+    --verde: #13f24b;
+    --verdeTransparencia: #13f24bb6;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    background-color: var(--preto);
+    font-family: "Roboto", serif;
+}
+
+#sectionBase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#divBase {
+
+    background-color: rgb(209, 209, 209);
+    margin-top: 4em;
+    border-radius: 20px;
+    height: 100vh;
+    width: 90%;
+    border: 2px solid var(--roxoEscuro);
+
+}
+
+#topo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 3em;
+
+
+}
+
+#topo h2 {
+    position: absolute;
+    left: 1.3em;
+    font-size: 2.3em;
+    font-family: "Cairo Play", serif;
+}
+
+#topo ul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    right: 3em;
+    gap: 2em;
+
+
+}
+
+.addUsuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--roxo);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+hr {
+    position: relative;
+    top: 6em;
+    margin-bottom: 0;
+}
+
+.tabela {
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background: #b7a0c2;
+}
+
+th {
+    font-size: 1.2em;
+    height: 30px;
+    border: 1px solid gray;
+}
+
+#pesquisarUser{
+    background-image: url(../imgs/lp.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--roxo);
+    height: 30px;
+    width: 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#limparPesquisa{
+    background-image: url(../imgs/close.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--roxo);
+    height: 30px;
+    width: 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#searchId{
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px;
+
+}
+input:focus{
+    outline-color: var(--roxo);
+}
+
+#pesquisaDiv{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+
+
+
+
+
+/* --------------------Responsividade Tablet-------------------------------------- */
+@media screen and (max-width:768px) {
+
+    #divBase {
+        width: 100%;
+    }
+
+    table {
+        width: 98%;
+    }
+    .tabela{
+        margin-top: 5em;
+    }
+
+    th {
+        font-size: 1em;
+    }
+
+    td {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    #topo h2 {
+        font-size: 2em;
+        top: 0;
+        
+    }
+    #topo ul{
+        bottom: 0;
+    }
+
+    #topo button {
+        height: 30px;
+    }
+
+    hr{
+        top: 3em;
+    }
+    #topo{
+        height: 7em;
+        top: 10px;
+    }
+
+}
+
+/* -------------------Responsividade Celular------------------------------------------- */
+
+@media screen and (max-width:650px) {
+
+    #divBase {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .tabela {
+        width: 100%;
+        margin-top: 3em;
+    }
+
+    table {
+        transform: scale(0.8);
+    }
+
+    th {
+        font-size: 0.9em;
+    }
+
+    td {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    #topo h2 {
+        font-size: 1.7em;
+        left: 1em;
+    }
+
+    #topo button {
+        width: 25px;
+
+    }
+    #topo a {
+        width: 68px;
+        font-size: 12px;
+    }
+
+    
+    hr{
+        top: 2.5em;
+    }
+
+    #searchId{
+       width: 110px;
+    }
+
+    #topo ul {
+        gap: 10px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}

@@ -1,0 +1,129 @@
+/* Input */
+.caixa-input {
+    position: relative;
+}
+
+.caixa-input input {
+    position: relative;
+    padding: 8px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1;     
+}
+
+.caixa-input input:hover {
+    cursor: pointer; 
+}
+
+.caixa-input input:focus {
+    cursor: text;
+}
+
+.caixa-input input:valid ~ span,
+.caixa-input input:focus ~ span {
+    transition: 0.3s;
+    font-size: 16px;
+    transform: translateY(-32px);
+}
+
+.caixa-input span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #040305;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.caixa-input i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #9800ce;
+    width: 100%;
+    transition: 0.3s;
+    height: 3px;
+}
+
+.caixa-input input:hover ~ i {
+    background: #9930ce;
+}
+
+.caixa-input input:valid ~ i,
+.caixa-input input:focus ~ i {
+    transition: 0.3s;
+    height: 100%;
+    box-shadow: inset 0 0 10px rgba(04,03,05,0.25);
+}
+
+/* Text Area */
+
+#caixa-text-area {
+    position: relative;
+    resize: none;
+}
+
+#caixa-text-area textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+
+    background-color: #9800ce;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    transition: all 0.2s;
+}
+
+#caixa-text-area textarea:hover {
+    cursor: pointer;
+    background-color: #9920ce;
+}
+
+#caixa-text-area textarea:focus {
+    cursor: text;
+    font-weight: bold;
+    background-color: #9960ce;
+    border-color: #040305;
+}
+
+/* Button */
+
+.btn {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #9800ce;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    border-color: white;
+    box-shadow: 0px 5px 5px 0px rgba(46,74,117,1);
+}
+
+.btn:active {
+    transform: translateY(5px);
+}
+
+/* radio */
+
+input[type=radio] {
+    height: 20px;
+    width: 20px;
+    vertical-align: -2px;
+}
